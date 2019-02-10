@@ -1,0 +1,135 @@
+// imports
+@import "reset";
+
+// import font
+@font-face {
+  font-family: "FoundersGroteskMono";
+  src: url("../fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot"),
+    url("../fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"),
+    url("../fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff");
+}
+
+// selection color
+::-moz-selection {
+  background: blue;
+}
+::selection {
+  background: blue;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: black;
+  height: 100%;
+  font-family: FoundersGroteskMono, monospace;
+  font-size: 14px;
+  line-height: 144%;
+}
+
+a {
+  color: #5555ff;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, minmax(96px, 7vw));
+  grid-gap: 24px;
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 800px;
+  height: 540px;
+  background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554589/monadic-logo_hxloaq.svg")
+    no-repeat center;
+  background-size: contain;
+  grid-column: 2 / span 9;
+  grid-row: 2 / span 5;
+  @media (max-width: 960px) {
+    background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554638/monadic-logo2_uwamaz.svg")
+      no-repeat center;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    width: 320px;
+    height: 157px;
+    align-self: center;
+    justify-self: center;
+  }
+  @media (max-width: 640px) {
+    background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg")
+      no-repeat center;
+    grid-row: 2 / span 1;
+    width: 68px;
+    height: 62px;
+  }
+  @media (min-width: 1600px) {
+    width: 50vw;
+    height: calc(50vw / 800 * 540);
+  }
+}
+
+.about {
+  grid-column: 9 / span 6;
+  grid-row: 6;
+  @media (max-width: 960px) {
+    grid-column: 2;
+    grid-row: 5;
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    grid-row: 4;
+    text-align: center;
+  }
+}
+
+.team {
+  grid-column: 3 / span 12;
+  grid-row: 8 / span 3;
+  margin-bottom: 120px;
+  h2 {
+    position: relative;
+    left: -24px;
+    padding: 48px 0 16px 0;
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+  @media (max-width: 960px) {
+    grid-column: 2;
+    grid-row: 7;
+    text-align: center;
+    h2 {
+      left: 0;
+    }
+  }
+  @media (max-width: 640px) {
+    grid-row: 6;
+  }
+}
+
+.icon {
+  grid-column: -3;
+  grid-row: -3;
+  align-self: flex-end;
+  display: block;
+  text-indent: -9999px;
+  background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg")
+    no-repeat center;
+  width: 68px;
+  height: 62px;
+  background-size: contain;
+  @media (max-width: 960px) {
+    display: none;
+  }
+}
