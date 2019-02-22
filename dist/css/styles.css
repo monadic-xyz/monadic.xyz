@@ -204,6 +204,8 @@ a {
 .about {
   grid-column: 9 / span 6;
   grid-row: 6; }
+  .about p {
+    margin-bottom: 1em; }
   @media (max-width: 960px) {
     .about {
       grid-column: 2;
@@ -233,7 +235,7 @@ a {
         left: 0; } }
   @media (max-width: 640px) {
     .team {
-      grid-row: 6; } }
+      grid-row: 7; } }
 
 .icon {
   grid-column: -3;
