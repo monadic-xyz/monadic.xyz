@@ -183,19 +183,13 @@ a {
   grid-row: 2 / span 5; }
   @media (max-width: 960px) {
     .logo {
-      background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554638/monadic-logo2_uwamaz.svg") no-repeat center;
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 2;
-      width: 320px;
-      height: 157px;
-      align-self: center;
-      justify-self: center; } }
-  @media (max-width: 640px) {
-    .logo {
       background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg") no-repeat center;
+      grid-column: 2 / span 1;
       grid-row: 2 / span 1;
       width: 68px;
-      height: 62px; } }
+      height: 62px;
+      align-self: center;
+      justify-self: center; } }
   @media (min-width: 1600px) {
     .logo {
       width: 50vw;
@@ -209,10 +203,6 @@ a {
   @media (max-width: 960px) {
     .about {
       grid-column: 2;
-      grid-row: 5;
-      text-align: center; } }
-  @media (max-width: 640px) {
-    .about {
       grid-row: 4;
       text-align: center; } }
 

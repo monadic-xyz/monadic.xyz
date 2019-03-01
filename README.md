@@ -14,5 +14,7 @@
 
 ## Deploy
 
-1. Run `gulp deploy`
-2. Will deploy with surge and give you a url where it lives.
+The site is deployed with [GithubPages](https://pages.github.com/) from the
+masters branch `docs/` directory. So a deploy invovles a `gulp build` and a push
+to master afterwards, or based on a PR where the output files in `docs/` are
+updated.
