@@ -1,5 +1,7 @@
 // imports
 @import "reset";
+@import "underline";
+@import "imprint";
 
 // import font
 @font-face {
@@ -7,15 +9,6 @@
   src: url("../fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot"),
     url("../fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"),
     url("../fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff");
-}
-
-// selection color
-::-moz-selection {
-  background: blue;
-}
-
-::selection {
-  background: blue;
 }
 
 body {
@@ -33,7 +26,7 @@ a {
   color: #5555ff;
 
   &:hover {
-    text-decoration: underline;
+    @include link-underline(#fff, #5555ff, #5555ff);
   }
 }
 
@@ -118,6 +111,19 @@ a {
 
   @media (max-width: 640px) {
     grid-row: 7;
+  }
+}
+
+.imprint-link {
+  grid-column: 3;
+  grid-row: 15;
+  align-self: flex-end;
+
+  @media (max-width: 960px) {
+    grid-column: 2;
+    grid-row: 16;
+    text-align: center;
+    align-self: flex-start;
   }
 }
 

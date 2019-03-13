@@ -1,0 +1,35 @@
+.imprint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 32px;
+
+  .logo-2 {
+    display: block;
+    text-indent: -9999px;
+    background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg") no-repeat center;
+    width: 68px;
+    height: 62px;
+    margin: 8em auto 10em;
+  }
+
+  h2,
+  p {
+    margin-bottom: 1em;
+  }
+
+  p {
+    padding-left: 24px;
+
+    @media (max-width: 640px) {
+      padding-left: 0;
+    }
+  }
+
+  .logo-link:hover {
+    @include link-underline(#fff, #fff, #fff);
+  }
+
+}

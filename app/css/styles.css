@@ -137,15 +137,52 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+.imprint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 32px; }
+  .imprint .logo-2 {
+    display: block;
+    text-indent: -9999px;
+    background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg") no-repeat center;
+    width: 68px;
+    height: 62px;
+    margin: 8em auto 10em; }
+  .imprint h2,
+  .imprint p {
+    margin-bottom: 1em; }
+  .imprint p {
+    padding-left: 24px; }
+    @media (max-width: 640px) {
+      .imprint p {
+        padding-left: 0; } }
+  .imprint .logo-link:hover {
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    color: #fff;
+    text-decoration: none; }
+    .imprint .logo-link:hover::selection {
+      text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+      background: #fff; }
+    .imprint .logo-link:hover::-moz-selection {
+      text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+      background: #fff; }
+    .imprint .logo-link:hover *,
+    .imprint .logo-link:hover *:after, .imprint .logo-link:hover:after,
+    .imprint .logo-link:hover *:before, .imprint .logo-link:hover:before {
+      text-shadow: none; }
+    .imprint .logo-link:hover:visited {
+      color: #fff; }
+
 @font-face {
   font-family: "FoundersGroteskMono";
   src: url("../fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot"), url("../fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"), url("../fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff"); }
-
-::-moz-selection {
-  background: blue; }
-
-::selection {
-  background: blue; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -160,7 +197,25 @@ body {
 a {
   color: #5555ff; }
   a:hover {
-    text-decoration: underline; }
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+    background-image: linear-gradient(#5555ff, #5555ff);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    color: #5555ff;
+    text-decoration: none; }
+    a:hover::selection {
+      text-shadow: 0.03em 0 #5555ff, -0.03em 0 #5555ff, 0 0.03em #5555ff, 0 -0.03em #5555ff, 0.06em 0 #5555ff, -0.06em 0 #5555ff, 0.09em 0 #5555ff, -0.09em 0 #5555ff, 0.12em 0 #5555ff, -0.12em 0 #5555ff, 0.15em 0 #5555ff, -0.15em 0 #5555ff;
+      background: #5555ff; }
+    a:hover::-moz-selection {
+      text-shadow: 0.03em 0 #5555ff, -0.03em 0 #5555ff, 0 0.03em #5555ff, 0 -0.03em #5555ff, 0.06em 0 #5555ff, -0.06em 0 #5555ff, 0.09em 0 #5555ff, -0.09em 0 #5555ff, 0.12em 0 #5555ff, -0.12em 0 #5555ff, 0.15em 0 #5555ff, -0.15em 0 #5555ff;
+      background: #5555ff; }
+    a:hover *,
+    a:hover *:after, a:hover:after,
+    a:hover *:before, a:hover:before {
+      text-shadow: none; }
+    a:hover:visited {
+      color: #5555ff; }
 
 .content {
   display: grid;
@@ -226,6 +281,17 @@ a {
   @media (max-width: 640px) {
     .team {
       grid-row: 7; } }
+
+.imprint-link {
+  grid-column: 3;
+  grid-row: 15;
+  align-self: flex-end; }
+  @media (max-width: 960px) {
+    .imprint-link {
+      grid-column: 2;
+      grid-row: 16;
+      text-align: center;
+      align-self: flex-start; } }
 
 .icon {
   grid-column: -3;
