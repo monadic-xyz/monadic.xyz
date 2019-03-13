@@ -122,8 +122,8 @@ a {
   @media (max-width: 960px) {
     grid-column: 2;
     grid-row: 16;
-    text-align: center;
     align-self: flex-start;
+    margin: 0 auto;
   }
 }
 

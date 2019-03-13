@@ -290,8 +290,8 @@ a {
     .imprint-link {
       grid-column: 2;
       grid-row: 16;
-      text-align: center;
-      align-self: flex-start; } }
+      align-self: flex-start;
+      margin: 0 auto; } }
 
 .icon {
   grid-column: -3;
