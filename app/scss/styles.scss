@@ -1,6 +1,5 @@
 // imports
 @import "reset";
-@import "underline";
 @import "imprint";
 
 // import font
@@ -26,7 +25,7 @@ a {
   color: #5555ff;
 
   &:hover {
-    @include link-underline(#fff, #5555ff, #5555ff);
+    text-decoration: underline;
   }
 }
 
@@ -114,16 +113,28 @@ a {
   }
 }
 
-.imprint-link {
-  grid-column: 3;
+.link {
+  grid-column: 3/ span 4;
   grid-row: 15;
   align-self: flex-end;
 
+  a:first-child {
+    margin-right: 32px;
+  }
+
+  display: flex;
+  flex-direction: column;
+
   @media (max-width: 960px) {
+    text-align: center;
     grid-column: 2;
     grid-row: 16;
     align-self: flex-start;
     margin: 0 auto;
+
+    a:first-child {
+      margin-right: 0;
+    }
   }
 }
 

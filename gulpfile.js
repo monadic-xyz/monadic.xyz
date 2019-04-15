@@ -13,11 +13,6 @@ var runSequence = require('run-sequence');
 
 const distDir = 'docs';
 
-// Basic Gulp task syntax
-gulp.task('hello', function () {
-  console.log('Hello Zell!');
-})
-
 // Development Tasks
 // -----------------
 
