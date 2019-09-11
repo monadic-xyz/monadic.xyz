@@ -234,6 +234,11 @@ button:focus {
     width: 68px;
     height: 62px;
     margin: 8em auto 10em; }
+  .jobs hr {
+    margin: 45px auto;
+    width: 80%;
+    border: none;
+    border-top: solid 1px #111; }
   .jobs h2,
   .jobs h3,
   .jobs h4,
