@@ -10,7 +10,7 @@
 ## Build
 
 1. Run `gulp build`
-2. The 'dist' folder contains the build
+2. The 'docs' folder contains the build
 
 ## Deploy
 
