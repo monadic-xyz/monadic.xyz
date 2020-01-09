@@ -308,7 +308,7 @@ a {
 .content {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(20, minmax(96px, 7vw));
+  grid-template-rows: repeat(22, minmax(96px, 7vw));
   grid-gap: 24px; }
   @media (max-width: 960px) {
     .content {
@@ -382,7 +382,7 @@ a {
     .link {
       text-align: center;
       grid-column: 2;
-      grid-row: 20;
+      grid-row: 22;
       align-self: flex-start;
       margin: 0 auto; }
       .link a:first-child {
