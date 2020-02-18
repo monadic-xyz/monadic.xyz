@@ -4,7 +4,13 @@
 
 1. Clone repo
 2. In your terminal cd to the project folder
-3. Write html / css
+
+
+## Development
+
+1. Start a simple server to preview the site `python -m SimpleHTTPServer`
+2. Write html / css
+3. Save & refresh
 
 ## Deploy
 
