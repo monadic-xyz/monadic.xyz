@@ -342,7 +342,7 @@ a:hover {
 
 .link {
   grid-column: 3/ span 4;
-  grid-row: 15;
+  grid-row: 17;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
