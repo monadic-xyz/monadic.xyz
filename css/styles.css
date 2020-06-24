@@ -1,5 +1,6 @@
-.imprint,
-.privacy {
+/* formatting for pages */
+
+.page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +9,7 @@
   padding: 0 32px 64px;
 }
 
-.imprint .logo-2,
-.privacy .logo-2 {
+.page .logo-2 {
   display: block;
   text-indent: -9999px;
   background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg") no-repeat center;
@@ -18,208 +18,113 @@
   margin: 8em auto 10em;
 }
 
-.imprint h2,
-.imprint h3,
-.imprint h4,
-.imprint p,
-.privacy h2,
-.privacy h3,
-.privacy h4,
-.privacy p {
-  margin-bottom: 1em;
+.page img {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  max-width: 350px;
+  padding-bottom: 24px;
 }
 
-.imprint h2,
-.privacy h2 {
-  text-align: center;
-  margin: 0 auto 2em;
-}
+.page hr {
 
-.imprint p,
-.imprint h4,
-.privacy p,
-.privacy h4 {
-  padding-left: 24px;
-}
-
-@media (max-width: 640px) {
-
-  .imprint p,
-  .imprint h4,
-  .privacy p,
-  .privacy h4 {
-    padding-left: 0;
-  }
-}
-
-.imprint h3,
-.privacy h3 {
+  max-width: 320px;
   margin-top: 2em;
-}
-
-.imprint h4,
-.privacy h4 {
-  margin-top: 1em;
-}
-
-.imprint ol,
-.imprint ul,
-.privacy ol,
-.privacy ul {
-  display: block;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.imprint ol,
-.privacy ol {
-  list-style-type: decimal;
-  padding-left: 50px;
-}
-
-@media (max-width: 640px) {
-
-  .imprint ol,
-  .privacy ol {
-    padding-left: 28px;
-  }
-}
-
-.imprint ul,
-.privacy ul {
-  list-style-type: disc;
-  padding-left: 48px;
-}
-
-@media (max-width: 640px) {
-
-  .imprint ul,
-  .privacy ul {
-    padding-left: 20px;
-  }
-}
-
-.imprint ul li ul,
-.imprint ul li p,
-.privacy ul li ul,
-.privacy ul li p {
-  padding-left: 24px;
-  margin-top: 1em;
-}
-
-@media (max-width: 640px) {
-
-  .imprint ul li ul,
-  .imprint ul li p,
-  .privacy ul li ul,
-  .privacy ul li p {
-    padding-left: 18px;
-  }
-}
-
-.jobs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 640px;
-  padding: 0 32px 64px;
-}
-
-.jobs .logo-2 {
-  display: block;
-  text-indent: -9999px;
-  background: url("https://res.cloudinary.com/juliendonck/image/upload/v1549554598/monadic-icon_myhdjk.svg") no-repeat center;
-  width: 68px;
-  height: 62px;
-  margin: 8em auto 10em;
-}
-
-.jobs hr {
-  margin-left: 24px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 48px;
   border: none;
-  border-top: solid 1px #111;
+  border-top: solid .25px #111;
 }
 
-.jobs h2,
-.jobs h3,
-.jobs h4,
-.jobs p {
+.page h2 {
+  text-align: center;
+  margin: 0 auto 2em;
+  margin-top: 2em;
+}
+
+.page p {
   margin-bottom: 1em;
 }
 
-.jobs h2 {
-  text-align: center;
-  margin: 0 auto 2em;
-}
-
-.jobs p,
-.jobs h4 {
+.page p,
+.page h4 {
   padding-left: 24px;
 }
 
-@media (max-width: 640px) {
+.page h4 {
+  margin-top: 1em;
+}
 
-  .jobs p,
-  .jobs h4 {
+@media (max-width: 640px) {
+  .page p,
+  .page h4 {
     padding-left: 0;
   }
 }
 
-.jobs h3 {
-  margin-top: 2em;
-}
-
-.jobs h4 {
+.page h3 {
+  font-size: 14px
+  style: italic;
+  text-align: center;
   margin-top: 1em;
 }
 
-.jobs ol,
-.jobs ul {
+.page ol,
+.page ul {
   display: block;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
 }
 
-.jobs ol {
+.page li {
+  padding-bottom: 1em;
+}
+
+.page ol {
   list-style-type: decimal;
   padding-left: 50px;
 }
 
 @media (max-width: 640px) {
-  .jobs ol {
+  .page ol {
     padding-left: 28px;
   }
 }
 
-.jobs ul {
+.page ul {
   list-style-type: disc;
-  padding-left: 48px;
+  padding-left: 64px;
+  max-width: 500px;
 }
 
 @media (max-width: 640px) {
-  .jobs ul {
+  .page ul {
     padding-left: 20px;
   }
 }
 
-.jobs ul li ul,
-.jobs ul li p {
+.page ul li ul,
+.page ul li p {
   padding-left: 24px;
   margin-top: 1em;
 }
 
 @media (max-width: 640px) {
 
-  .jobs ul li ul,
-  .jobs ul li p {
+  .page ul li ul,
+  .page ul li p {
     padding-left: 18px;
   }
 }
+
+/* extra spacing for blog posts */
+
+.content h3,
+.content h4,
+.content p {
+  margin-bottom: 3em;
+}
+
 
 @font-face {
   font-family: "FoundersGroteskMono";
@@ -245,7 +150,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.content {
+
+/* formatting for homepage */
+
+.homepage {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(22, minmax(96px, 7vw));
@@ -253,7 +161,7 @@ a:hover {
 }
 
 @media (max-width: 960px) {
-  .content {
+  .homepage {
     grid-template-columns: 1fr 6fr 1fr;
     grid-gap: 0;
   }
@@ -289,6 +197,8 @@ a:hover {
   }
 }
 
+/* about section */
+
 .about {
   grid-column: 9 / span 6;
   grid-row: 6;
@@ -305,6 +215,8 @@ a:hover {
     text-align: center;
   }
 }
+
+/* team section */
 
 .team {
   grid-column: 3 / span 12;
